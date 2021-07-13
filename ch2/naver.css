@@ -1,0 +1,31 @@
+/* 여러개 동시에 같은 속성 넣는 법 */
+/* div#header-center, div#flexboni {
+  margin: 0 auto;
+  width: 1080px;
+} */
+
+/* div 태그는 생략해도 된다. */
+#header-center {
+  margin: 0 auto;
+  width: 1080px;
+}
+
+/* div 태그의 id가 header-search 인 태그를 찾고
+그 자식 중 h1인 것에 속성을 주라는 뜻 */
+div#header-search > h1 {
+  width: 280px;
+  display: inline-block;
+}
+
+/* div#header-search h1 {
+    자손(자식 + 손자 + a) 선택자
+} */
+
+#header-search h2 {
+  display: none;
+}
+
+#header-search fieldset {
+  width: 520px;
+  display: inline-block;
+}
